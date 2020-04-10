@@ -1,25 +1,11 @@
 <template>
-    <div class="popup-wrapper" v-show="visible" @click="hide">
+    <div class="popup-wrapper">
         <div class="popup-text">{{text}}</div>
     </div>
 </template>
 <script>
 export default {
     name: 'popup',
-    props: ['text'],
-    data(){
-        return {
-            visible: false
-        }
-    },
-    methods: {
-        hide(){
-            this.visible = false;
-        },
-        open(){
-            this.visible = true;
-        }
-    }
 }
 </script>
 <style>

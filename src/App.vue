@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <input type="button" value="按钮" class="btn" @click="openPop" />
-    <popup text="弹窗内容" ref="popup"></popup>
   </div>
 </template>
 
@@ -12,8 +11,9 @@ export default {
   name: 'App',
   methods: {
     openPop(){
-      console.log(this.$refs.popup);
-      this.$refs.popup.open();
+      // console.log(this.$refs.popup);
+      // this.$refs.popup.open();
+      this.$popup({text:'弹窗2'});
     }
   },
   components: {
