@@ -18,6 +18,10 @@ export default {
   },
   components: {
     Popup
+  },
+  mounted(){
+    // console.log(this.$msg);
+    this.$toast('啊啊啊', 'center');
   }
 }
 </script>
